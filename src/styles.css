@@ -34,6 +34,9 @@ button {
   background-color: whitesmoke;
 }
 
+.main-content{
+  margin-top: 132px;
+}
 
 .top-bar {
   background-color: #762cfb;
@@ -198,7 +201,8 @@ button {
 
 .navbar__buttons-content a:hover{
   opacity: 0.9;
-  border-bottom: 1px solid #955cff;	
+  border-bottom: 1px solid #955cff;
+  box-shadow: 0 4px 6px rgba(116, 44, 251, 0.281);	
 }
 
 .navbar__buttons-content button{
@@ -220,9 +224,63 @@ button {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.822);
 }
 
+.hero-banner{
+  max-width: 1440px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
+  position: relative;
+}
 
-.featured-products{
-  margin-top: 137px;
+.hero-banner__image{
+  width: 100%;
+}
+
+.hero-banner__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.hero-banner__button{
+  position: absolute;
+  bottom: 2.2rem;
+  left: 4.5rem;
+
+}
+
+.hero-banner__button button{
+  min-width: 117px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #762cfb;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner__button button:hover{
+  background-color: #813ff9;
+}
+
+.hero-banner__button button p{
+  font-weight: 700;
+  font-size: 23px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', monospace;
   color: white;
-  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  letter-spacing: -1px;
 }
