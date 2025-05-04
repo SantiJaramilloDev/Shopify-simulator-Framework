@@ -43,3 +43,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .marquee__items{
+    animation: top-bar__scroll 140s linear infinite;
+    & p{
+      font-size: 55px;
+    }
+  }
+}
