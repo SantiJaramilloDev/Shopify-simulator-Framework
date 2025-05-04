@@ -1,4 +1,4 @@
-# 🛍️ Shopify Storefront Simulator
+# 🛍️ Shopify Simulator
 
 Este proyecto es una réplica de una tienda , desarrollada como parte de una prueba técnica. La implementación busca emular fielmente una experiencia real de usuario en una tienda Shopify, utilizando un motor de plantillas `liquidjs`, Express y Webpack.
 
@@ -34,19 +34,41 @@ Este proyecto es una réplica de una tienda , desarrollada como parte de una pru
 
 ## 🔧 Estructura del proyecto
 
-├── assets/ # Imágenes y recursos estáticos
-├── components/ # Componentes .liquid
-│ ├── navbar.liquid
-│ ├── hero-banner.liquid
-│ ├── featured-products.liquid
-│ └── collections.liquid
-├── styles/ # Estilos SASS organizados modularmente
-├── views/ # Plantillas de página
-│ └── index.liquid
-├── app.js # Lógica principal del frontend
-├── server.js # Servidor Express
-├── package.json # Dependencias y scripts
-└── webpack.config.js # Configuración de Webpack
+Shopify-simulator-Framework/
+├── 📁 assets/                # Imágenes y recursos estáticos
+│   └── 🖼️ shuffle-logo.png
+├── 📁 components/            # Componentes reutilizables en Liquid
+│   ├── navbar.liquid
+│   ├── hero-banner.liquid
+│   ├── featured-products.liquid
+│   └── collections.liquid
+├── 📁 public/                # Archivos públicos servidos directamente
+│   └── 📄 main.js            # Bundle generado por Webpack
+├── 📁 src/                   # Código fuente
+│   ├── 📁 styles/            # Estilos SASS organizados modularmente
+│   │   ├── base/
+│   │   │   ├── _reset.scss
+│   │   │   └── _typography.scss
+│   │   ├── components/
+│   │   │   ├── _herobanner.scss
+│   │   │   ├── _marquee.scss
+│   │   │   ├── _products.scss
+│   │   │   ├── _collections.scss
+│   │   │   └── _modal.scss
+│   │   ├── layout/
+│   │   │   ├── _navbar.scss
+│   │   │   ├── _topbar.scss
+│   │   │   └── _footer.scss
+│   │   └── pages/
+│   │       └── _index.scss
+│   ├── 📄 main.scss          # Archivo principal que importa todos los estilos
+│   └── 📄 app.js             # Lógica principal del frontend
+├── 📁 views/                 # Plantillas de página
+│   └── 📄 index.liquid
+├── 📄 server.js              # Servidor Express
+├── 📄 package.json           # Dependencias y scripts
+├── 📄 webpack.config.js      # Configuración de Webpack
+└── 📄 README.md              # Documentación del proyecto
 
 ---
 
