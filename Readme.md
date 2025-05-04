@@ -33,7 +33,7 @@ Este proyecto es una réplica de una tienda , desarrollada como parte de una pru
 ---
 
 ## 🔧 Estructura del proyecto
-
+```bash
 Shopify-simulator-Framework/
 ├── 📁 assets/                # Imágenes y recursos estáticos
 │   └── 🖼️ shuffle-logo.png
