@@ -2,9 +2,11 @@
   <div class="hero-banner__image">
     <img src="/assets/hero_banner_img.avif" alt="hero-banner">
   </div>
-  <div class="hero-banner__button">
-    <button>
-      <p>VIEW THE COLLECTION</p>
-    </button>
-  </div>
+  <a href={{ settings['hero-banner'].settings.button_link }}>
+    <div class="hero-banner__button">
+      <button>
+        <p>{{ settings['hero-banner'].settings.button_text }}</p>
+      </button>
+    </div>
+  </a>
 </section>

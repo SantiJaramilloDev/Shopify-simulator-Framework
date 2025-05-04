@@ -1,10 +1,13 @@
 const path = require('path');
+const webpack = require('webpack');
+
 
 module.exports = {
-  entry: './src/app.js',
+  entry: ['webpack-hot-middleware/client', './src/app.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'main.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -22,5 +25,11 @@ module.exports = {
       }
     ],
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
   mode: 'development',
+  devtool: 'inline-source-map',
+  watch: true
+
 };
