@@ -69,9 +69,8 @@ Shopify-simulator-Framework/
 ├── 📄 package.json           # Dependencias y scripts
 ├── 📄 webpack.config.js      # Configuración de Webpack
 └── 📄 README.md              # Documentación del proyecto
-
+```
 ---
-
 ## 🚀 Instalación y ejecución local
 
 1. **Clona el repositorio**  
